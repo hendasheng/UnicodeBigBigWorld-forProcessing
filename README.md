@@ -56,7 +56,9 @@ void setup() {
 ```
 多数情况下建议传入 `arrayLength` 参数，如上方代码中传入的 "3400", "4DB5"（CJK 扩展 B 字符集）。未指定 `arrayLength` 时，默认输出字符集长度为 6581，也就是 "3400"、"4DB5" 转换为十进制之后相减的值，这个长度的数组会拖慢运行速度，如果明确需要完整字符集，则可以保持默认长度。
 ## 使用
-本打算把它做成一个库文件，可以直接引用的那种，尝试了一下发现短期内我还没没办法实现，所以用了最简单、最粗暴、最幼稚的办法，在这里 [示例](https://github.com/N1U/UnicodeBigBigWorld-forProcessing/tree/master/UnicodeToChar_template) 复制代码到你的编辑器中，然后就开始你的表演吧。
+本打算把它做成一个库文件，可以直接引用的那种，尝试了一下发现短期内我还没没办法实现，所以用了最简单、最粗暴、最幼稚的办法，在这里 [示例](https://github.com/N1U/UnicodeBigBigWorld-forProcessing/tree/master/UnicodeToChar_template) 复制代码到你的编辑器中，然后就开始你的表演吧。  
+
+![template](UnicodeToChar_template/img/template.png)
 
 希望你喜欢 🤗
 ***  
