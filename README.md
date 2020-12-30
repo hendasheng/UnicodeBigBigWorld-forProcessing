@@ -19,7 +19,7 @@ void draw() {
 }
 ```
 ### 传参
-`utc = new UnicodeToChar(PFont font, String hexMin, String hexMax);`
+`utc = new UnicodeToChar(PFont font, String hexMin, String hexMax);`  
 `utc = new UnicodeToChar(PFont font, String hexMin, String hexMax, int arrayTotal);`
 
 **font:** 指定字体；
