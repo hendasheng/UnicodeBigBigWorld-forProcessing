@@ -58,7 +58,7 @@ void setup() {
 ## 使用
 本打算把它做成一个库文件，可以直接引用的那种，尝试了一下发现短期内我还没没办法实现，所以用了最简单、最粗暴、最幼稚的办法，在这里 [示例](https://github.com/N1U/UnicodeBigBigWorld-forProcessing/tree/master/UnicodeToChar_template) 复制代码到你的编辑器中，然后就开始你的表演吧。  
 
-![template](UnicodeToChar_template/img/template.png)
+![template](img/template.png)
 
 希望你喜欢 🤗
 ***  
