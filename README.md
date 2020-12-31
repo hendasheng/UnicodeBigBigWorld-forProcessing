@@ -64,6 +64,8 @@ void setup() {
 ***  
 
 ## 案例
+![Unicode](img/sketch_72_aboutUnicode_03.png)
+![case](img/case.png)
 
 ## 关于 Unicode 
 [汉字 Unicode 编码范围](https://www.qqxiuzi.cn/zh/hanzi-unicode-bianma.php)  
