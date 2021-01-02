@@ -54,7 +54,7 @@ PFont font;
 void setup() {
   size(800, 800);
   font = createFont("SourceHanSerifSC-Bold", 18, true);
-  utc = new UnicodeToChar(font, "3400", "4DB5", 100, false);
+  utc = new UnicodeToChar(font, "3400", "4DB5", false, 100);
 
   // utc.valueArray.length = 100
 }
