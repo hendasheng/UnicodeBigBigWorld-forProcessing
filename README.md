@@ -8,10 +8,9 @@ PFont font;
 
 void setup() {
   size(800, 800);
+  // 替换为你喜欢的字体
   font = createFont("SourceHanSerifSC-Bold", 18, true);
-  utc = new UnicodeToChar(font, "3400", "4DB5");
-
-  println(utc.valueArray.length);
+  utc = new UnicodeToChar(font, "3400", "4DB5", false, 100);
 }
 
 void draw() {
@@ -19,17 +18,22 @@ void draw() {
 }
 ```
 ## 传参
-`utc = new UnicodeToChar(PFont font, String hexMin, String hexMax);`  
-`utc = new UnicodeToChar(PFont font, String hexMin, String hexMax, int arrayTotal);`
+`UnicodeToChar(PFont font, String hexMin, String hexMax, boolean random, int arrayLength)`
+
+`UnicodeToChar(PFont font, String hexMin, String hexMax, boolean random) `
 
 **font:** 指定字体；  
 **hexMin:** unicode 字符集编码最小值；  
 **hexMan:** unicode 字符集编码最大值；  
+**random:** 是否开启随机排列
 
 **arrayLength:** 字符集数组长度。  
-arrayTotal 为选填参数，当未传入 `arrayLength` 时, `utc.valueArray` 字符组的长度与字符集长度相等（`valueArray.length = hexMax - hexMin`）；
+arrayLength 为选填参数，当未传入 `arrayLength` 时, `utc.valueArray` 字符组的长度与字符集长度相等（`valueArray.length = hexMax - hexMin`）；
 
-当传入 arrayLength 时， 设置字符组长度，如：`arrayLength = 100`，`utc.valueArray` 字符组的长度则为 100，UnicodeToChar 会在当前字符集中，随机选择 100 个字符储存到字符组中。
+当传入 arrayLength 时， 设置字符组长度，如：`arrayLength = 100`，`utc.valueArray` 字符组的长度则为 100，UnicodeToChar 会在当前字符集中，截取 100 个字符保存到字符组中。
+
+当 arrayLength 大于字符集长度时，arrayLength 长度等于字符集长度。如：`"0041", "005A"`(A - Z 字符集)，共 26 个字符，当 arrayLength 大于 26时，字符组长度依然为 26。
+
 
 ```java
 UnicodeToChar utc;
@@ -38,9 +42,9 @@ PFont font;
 void setup() {
   size(800, 800);
   font = createFont("SourceHanSerifSC-Bold", 18, true);
-  utc = new UnicodeToChar(font, "3400", "4DB5");
+  utc = new UnicodeToChar(font, "3400", "4DB5", false);
 
-  println(utc.valueArray.length);   // 6581
+   // utc.valueArray.length = 6581
 }
 ```
 ```java
@@ -50,9 +54,9 @@ PFont font;
 void setup() {
   size(800, 800);
   font = createFont("SourceHanSerifSC-Bold", 18, true);
-  utc = new UnicodeToChar(font, "3400", "4DB5", 100);
+  utc = new UnicodeToChar(font, "3400", "4DB5", 100, false);
 
-  println(utc.valueArray.length);   // 100
+  // utc.valueArray.length = 100
 }
 ```
 多数情况下建议传入 `arrayLength` 参数，如上方代码中传入的 "3400", "4DB5"（CJK 扩展 B 字符集）。  
