@@ -74,7 +74,8 @@ void setup() {
 
 ## 案例
 ![Unicode](img/sketch_72_aboutUnicode_03.png)
-![case](img/case.png)
+![case](img/case.png)  
+在 [examples](https://github.com/N1U/UnicodeBigBigWorld-forProcessing/tree/master/examples) 文件夹中查看基础案例代码。
 
 ## 关于 Unicode 
 [Unicode 13.0 字符编码表（官方）](http://www.unicode.org/charts/)  
