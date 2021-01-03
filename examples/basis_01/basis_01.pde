@@ -2,7 +2,7 @@ UnicodeToChar utc;
 PFont font;
 
 float radius;
-float total;
+int total;
 float theta;
 
 void setup() {
