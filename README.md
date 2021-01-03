@@ -77,6 +77,7 @@ void setup() {
 ![case](img/case.png)
 
 ## 关于 Unicode 
+[Unicode 13.0 字符编码表（官方）](http://www.unicode.org/charts/)  
 [汉字 Unicode 编码范围](https://www.qqxiuzi.cn/zh/hanzi-unicode-bianma.php)  
-[Unicode 13.0 字符编码表](http://www.unicode.org/charts/)  
+[Unicode 编码查询](http://www.52unicode.com/)  
 [非常详细的字符编码讲解，ASCII、GB2312、GBK、Unicode、UTF-8等知识点都有(bilibili）](https://www.bilibili.com/video/BV1gZ4y1x7p7)
