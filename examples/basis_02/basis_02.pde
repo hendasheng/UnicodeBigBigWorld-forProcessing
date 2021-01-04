@@ -5,7 +5,10 @@ void setup() {
   size(400, 800);
   //pixelDensity(2);
   //smooth();
-  font = createFont("SourceHanSerifSC-Bold", 18, true);
+  font = createFont("SourceHanSerifSC-Bold", 24, true);
+
+  // CJK 扩展 B
+  utc = new UnicodeToChar(font, "3400", "4DB5", true, 300);
 
   // 日文片假名
   //utc = new UnicodeToChar(font, "30A0", "30FF", false, 100);
@@ -15,9 +18,6 @@ void setup() {
 
   // 基本拉丁文
   //utc = new UnicodeToChar(font, "0020", "007F", false, 100);
-
-  // CJK 扩展 B
-  utc = new UnicodeToChar(font, "3400", "4DB5", true, 300);
 
   // 几何图形
   //utc = new UnicodeToChar(font, "25A0", "25FF", true, 300);
