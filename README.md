@@ -86,5 +86,7 @@ void setup() {
 ## 联系我
 [@niu_uinniu(新浪微博)](https://weibo.com/u/1683849881?wvr=3.6&lf=reg)  
 [@n1uu1n(instagram)](https://www.instagram.com/n1uu1n/)  
-**微信**
-<img src="img/weixin-QRcode.JPG" width = "200" alt="图片名称" align=left />
+<div>
+  <div>微信</div>
+  <img src="img/weixin-QRcode.JPG" width = "200" alt="图片名称" align=left />
+</div>
