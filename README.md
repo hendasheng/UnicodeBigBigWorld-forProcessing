@@ -83,10 +83,10 @@ void setup() {
 [Unicode 编码查询](http://www.52unicode.com/)  
 [非常详细的字符编码讲解，ASCII、GB2312、GBK、Unicode、UTF-8等知识点都有(bilibili）](https://www.bilibili.com/video/BV1gZ4y1x7p7)
 
-## 联系我
+<!-- ## 联系我
 [@niu_uinniu(新浪微博)](https://weibo.com/u/1683849881?wvr=3.6&lf=reg)  
 [@n1uu1n(instagram)](https://www.instagram.com/n1uu1n/)  
 <div>
   <div>微信</div>
   <img src="img/weixin-QRcode.JPG" width = "200" alt="图片名称" align=left />
-</div>
+</div> -->
